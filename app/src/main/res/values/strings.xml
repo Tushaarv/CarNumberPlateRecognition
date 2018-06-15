@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NumberPlateRecognition</string>
+    <string name="main_button_capture_image">Capture Image</string>
+    <string name="main_button_read_image">Read Image</string>
+</resources>

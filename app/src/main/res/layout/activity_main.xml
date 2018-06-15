@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.transerve.numberplaterecognition.UI.MainScreen.MainActivity">
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:contentDescription="Hello World!"
+        android:scaleType="fitCenter"
+        app:layout_constraintDimensionRatio="1:0.75" />
+
+    <Button
+        android:id="@+id/main_button_image_capture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="OnClickCaptureImage"
+        android:text="@string/main_button_capture_image"
+        app:layout_constraintTop_toBottomOf="@+id/main_image" />
+
+    <Button
+        android:id="@+id/main_button_image_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="OnClickReadImage"
+        android:text="@string/main_button_read_image"
+        app:layout_constraintTop_toBottomOf="@+id/main_button_image_capture" />
+
+    <TextView
+        android:id="@+id/main_text_vehicle_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        app:layout_constraintTop_toBottomOf="@+id/main_button_image_read"
+        tools:text="GA07K8660" />
+
+
+</android.support.constraint.ConstraintLayout>
